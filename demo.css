@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  background-color: aqua;
+  border: 4px solid red;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.one {
+  background-image: url('https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 400px;
+  width: 650px;
+  /* position: relative; */
+  /* border-radius: 20px; */
+  transition: all 2s;
+}
+
+.one:hover {
+  transform: scale(1.5);
+}
+.main-container:hover .hello {
+  left: 30px;
+}
+
+.main-container:hover .message-div {
+  right: 30px;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.hello {
+  background-color: transparent;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 70px;
+  left: -300px;
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 10px 10px 60px grey;
+  transition: all 5s;
+}
+
+.hello p {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+}
+
+.message-div {
+  background-color: transparent;
+  color: ;
+  height: 50px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* backdrop-filter: blur(10px); */
+  border: 2px solid black;
+  box-shadow: 10px 10px 60px grey;
+  border-radius: 25px;
+  right: -380px;
+  bottom: 10px;
+  transition: all 5s;
+}
+
+.message-div p {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+}
